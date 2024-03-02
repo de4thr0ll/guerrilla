@@ -1,0 +1,40 @@
+= guerrilla — A collection of easy-to-deploy proxies for digital guerrillas
+de4thr0ll <github.com/de4thr0ll>
+
+:toc:
+
+== Usage
+
+Clone the project
+```console
+$ git clone https://github.com/de4thr0ll/guerrilla.git
+```
+
+=== shadowsocks-rust server
+NOTE: All of the commands are performed in the cloned project root directory.
+
+. Generate a password for the server
++
+```console
+$ docker compose run shadowsocks openssl rand -base64 20
+```
+
+. Create a configuration file
++
+```console
+$ cp shadowsocks.json{.example,}
+```
+
+. Edit the configuration file `shadowsocks.json` as appropriate
++
+--
+TIP: The config file reference can be found link:https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File[here].
+
+WARNING: If you want to change the shadowsocks-rust port, don't forget to change it in the `compose.yml` file.
+--
+
+. Start the server
++
+```console
+$ docker compose up -d shadowsocks
+```
