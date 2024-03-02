@@ -34,6 +34,8 @@ $ cp shadowsocks.json{.example,}
 TIP: The config file reference can be found link:https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File[here].
 
 WARNING: If you want to change the shadowsocks-rust port, don't forget to change it in the `compose.yml` file.
+
+NOTE: The `server` field in the config file must contain the service name, `shadowsocks`.
 --
 
 . Start the server
