@@ -12,3 +12,7 @@ services:
     - ./shadowsocks.json:/etc/shadowsocks-rust/config.json
     ports:
     - 8443:8443
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 5
