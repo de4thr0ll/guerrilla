@@ -1,6 +1,5 @@
 = guerrilla — A collection of easy-to-deploy proxies for digital guerrillas
 de4thr0ll <github.com/de4thr0ll>
-
 :toc:
 :icons: font
 
