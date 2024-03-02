@@ -2,6 +2,7 @@
 de4thr0ll <github.com/de4thr0ll>
 
 :toc:
+:icons: font
 
 == Usage
 
