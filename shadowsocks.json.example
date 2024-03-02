@@ -1,0 +1,6 @@
+{
+    "server": "shadowsocks",
+    "server_port": 8443,
+    "password": "",
+    "method": "aes-256-gcm"
+}

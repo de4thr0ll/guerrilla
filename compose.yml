@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  shadowsocks:
+    image: ghcr.io/shadowsocks/ssserver-rust
+    cap_drop:
+    - ALL
+    cap_add:
+    # Allow changing to the "nobody" user
+    - SETUID
+    - SETGID
+    volumes:
+    - ./shadowsocks.json:/etc/shadowsocks-rust/config.json
+    ports:
+    - 8443:8443
