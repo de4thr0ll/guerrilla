@@ -26,6 +26,7 @@ EXTERNAL_IP=<your.server_ip.without.angles>
 
 == Services
 === shadowsocks-rust server
+A port of link:https://shadowsocks.org/[shadowsocks] written in Rust. For more, see link:https://github.com/shadowsocks/shadowsocks-rust[this repo].
 
 . Generate a password for the server
 +
