@@ -6,6 +6,8 @@ de4thr0ll <github.com/de4thr0ll>
 This repository provides a Docker Compose project for running different kinds of proxies and other censorship circumvention tools on your own servers.
 More services and documentation will be added later.
 
+image::img/guerrilla-banner-512x215.png[pixel art image, disturbed-like face in a hood, holding prison bars and showing middle finger]
+
 == Roadmap
 This project is in its early stages of development.
 The roadmap will be updated as new needs arise.
@@ -91,3 +93,8 @@ $ docker compose run --rm tools genpass <size>
 NOTE: `<size>` is the size of your password in bytes. The password itself will have a larger count of characters since it is encoded in Base64.
 
 TIP: The longer password the better. Make sure to use at least 20-byte passwords.
+
+== Licenses
+* The code is licensed under the link:LICENSE[BSD Zero Clause License].
+
+* link:img/guerrilla-banner-512x215.png[guerrilla banner] © 2024 by de4thr0ll <github.com/de4thr0ll> is licensed under CC BY 4.0.
