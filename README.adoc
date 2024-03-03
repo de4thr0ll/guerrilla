@@ -66,6 +66,8 @@ $ docker compose up -d shadowsocks
 Miscellaneous tools to simplify your user experience.
 
 === genqr — Generate a QR code for shadowsocks clients
+This will generate a QR code for adding shadowsocks configuration to clients.
+The code will be printed right in your terminal in UTF-8.
 ```console
 $ docker compose run tools genqr
 ```
