@@ -77,3 +77,5 @@ $ docker compose run tools genpass <size>
 ```
 
 NOTE: `<size>` is the size of your password in bytes. The password itself will have a larger count of characters since it is encoded in Base64.
+
+TIP: The longer password the better. Make sure to use at least 20-byte passwords.
