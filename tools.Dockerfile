@@ -2,7 +2,7 @@ FROM fedora
 
 COPY dnf.conf /etc/dnf/dnf.conf
 
-RUN dnf install -y qrencode jq
+RUN dnf install -y qrencode jq openssl
 
 RUN useradd guerrilla
 

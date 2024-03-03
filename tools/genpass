@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+PASSWORD_SIZE=$1
+: ${PASSWORD_SIZE:?}
+
+openssl rand -base64 ${PASSWORD_SIZE}

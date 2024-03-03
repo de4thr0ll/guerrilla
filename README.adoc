@@ -29,9 +29,7 @@ EXTERNAL_IP=<your.server_ip.without.angles>
 
 . Generate a password for the server
 +
-```console
-$ docker compose run shadowsocks openssl rand -base64 20
-```
+TIP: See link:#genpass[genpass].
 
 . Create a configuration file
 +
@@ -62,3 +60,11 @@ Miscellaneous tools to simplify your user experience.
 ```console
 $ docker compose run tools genqr
 ```
+
+[#genpass]
+=== genpass — Generate a random password using openssl
+```console
+$ docker compose run tools genpass <size>
+```
+
+NOTE: `<size>` is the size of your password in bytes. The password itself will have a larger count of characters since it is encoded in Base64.
