@@ -84,6 +84,8 @@ The code will be printed right in your terminal in UTF-8.
 $ docker compose run --rm tools genqr
 ```
 
+video::img/qrexample.mp4[Example video]
+
 [#genpass]
 === genpass — Generate a random password using openssl
 ```console
