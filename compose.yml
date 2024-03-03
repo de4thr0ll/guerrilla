@@ -11,7 +11,7 @@ services:
     - SETUID
     - SETGID
     volumes:
-    - ./shadowsocks.json:/etc/shadowsocks-rust/config.json
+    - ./shadowsocks.json:/etc/shadowsocks-rust/config.json:ro
     ports:
     - 8443:8443
     deploy:
@@ -26,6 +26,6 @@ services:
     cap_drop:
         - ALL
     volumes:
-    - ./shadowsocks.json:/etc/shadowsocks-rust/config.json
+    - ./shadowsocks.json:/etc/shadowsocks-rust/config.json:ro
     env_file:
     - .env
