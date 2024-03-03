@@ -6,6 +6,8 @@ de4thr0ll <github.com/de4thr0ll>
 This repository provides a Docker Compose project for running different kinds of proxies and other censorship circumvention tools on your own servers.
 More services and documentation will be added later.
 
+The announcement can be found link:https://dev.to/deathroll/guerrilla-your-personal-censorship-circumvention-toolbox-bpe[here].
+
 image::img/guerrilla-banner-512x215.png[pixel art image, disturbed-like face in a hood, holding prison bars and showing middle finger]
 
 == Roadmap
