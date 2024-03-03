@@ -80,11 +80,12 @@ Miscellaneous tools to simplify your user experience.
 === genqr — Generate a QR code for shadowsocks clients
 This will generate a QR code for adding shadowsocks configuration to clients.
 The code will be printed right in your terminal in UTF-8.
+
+link:img/qrexample.mp4[Example video]
+
 ```console
 $ docker compose run --rm tools genqr
 ```
-
-video::img/qrexample.mp4[Example video]
 
 [#genpass]
 === genpass — Generate a random password using openssl
