@@ -6,6 +6,16 @@ de4thr0ll <github.com/de4thr0ll>
 This repository provides a Docker Compose project for running different kinds of proxies on your own servers.
 More services and documentation will be added later.
 
+== Roadmap
+This project is in its early stages of development.
+The roadmap will be updated as new needs arise.
+
+- [x] (service) shadowsocks server
+- [ ] (service) DNS resolver and/or proxy with support for DoH
+- [ ] (service) mask as a regular site
+- [x] (tool) shadowsocks qr generator
+- [x] (tool) openssl base64 password generator
+
 == Usage
 
 . Clone the project
