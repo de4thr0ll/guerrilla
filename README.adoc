@@ -16,6 +16,14 @@ $ git clone https://github.com/de4thr0ll/guerrilla.git
 +
 NOTE: All further commands are performed in the cloned project root directory.
 
+. Build and pull all container images
++
+```console
+$ docker compose pull && docker compose build
+```
++
+NOTE: This may take quite some time, especially for the tools image.
+
 . Add a `.env` file with the following contents
 +
 ```
