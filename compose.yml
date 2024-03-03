@@ -1,9 +1,7 @@
 version: '3.8'
 services:
   shadowsocks:
-    build:
-      context: .
-      dockerfile: shadowsocks.Dockerfile
+    image: ghcr.io/shadowsocks/ssserver-rust
     cap_drop:
     - ALL
     cap_add:
