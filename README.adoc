@@ -79,13 +79,13 @@ Miscellaneous tools to simplify your user experience.
 This will generate a QR code for adding shadowsocks configuration to clients.
 The code will be printed right in your terminal in UTF-8.
 ```console
-$ docker compose run tools genqr
+$ docker compose run --rm tools genqr
 ```
 
 [#genpass]
 === genpass — Generate a random password using openssl
 ```console
-$ docker compose run tools genpass <size>
+$ docker compose run --rm tools genpass <size>
 ```
 
 NOTE: `<size>` is the size of your password in bytes. The password itself will have a larger count of characters since it is encoded in Base64.
