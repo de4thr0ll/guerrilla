@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -eu
+
+CONFIG=/etc/shadowsocks-rust/config.json
+METHOD="$(jq -r .method ${CONFIG})"
+PASSWORD="$(jq -r .password ${CONFIG})"
+PORT="$(jq -r .server_port ${CONFIG})"
+: ${EXTERNAL_IP:?}
+
+qrencode -t UTF8 -o - ss://$(echo -n "${METHOD}:${PASSWORD}@${EXTERNAL_IP}:${PORT}" | base64 -w0)

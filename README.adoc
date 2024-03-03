@@ -8,13 +8,24 @@ More services and documentation will be added later.
 
 == Usage
 
-Clone the project
+. Clone the project
++
 ```console
 $ git clone https://github.com/de4thr0ll/guerrilla.git
 ```
++
+NOTE: All further commands are performed in the cloned project root directory.
 
+. Add a `.env` file with the following contents
++
+```
+EXTERNAL_IP=<your.server_ip.without.angles>
+```
+
+. Follow further instructions for a specific service or tool.
+
+== Services
 === shadowsocks-rust server
-NOTE: All of the commands are performed in the cloned project root directory.
 
 . Generate a password for the server
 +
@@ -42,4 +53,12 @@ NOTE: The `server` field in the config file must contain the service name, `shad
 +
 ```console
 $ docker compose up -d shadowsocks
+```
+
+== Tools
+Miscellaneous tools to simplify your user experience.
+
+=== genqr — Generate a QR code for shadowsocks clients
+```console
+$ docker compose run tools genqr
 ```

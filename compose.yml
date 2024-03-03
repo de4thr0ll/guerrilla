@@ -18,3 +18,14 @@ services:
       restart_policy:
         condition: on-failure
         max_attempts: 5
+
+  tools:
+    build:
+      context: .
+      dockerfile: tools.Dockerfile
+    cap_drop:
+        - ALL
+    volumes:
+    - ./shadowsocks.json:/etc/shadowsocks-rust/config.json
+    env_file:
+    - .env
