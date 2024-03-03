@@ -3,7 +3,7 @@ de4thr0ll <github.com/de4thr0ll>
 :toc:
 :icons: font
 
-This repository provides a Docker Compose project for running different kinds of proxies on your own servers.
+This repository provides a Docker Compose project for running different kinds of proxies and other censorship circumvention tools on your own servers.
 More services and documentation will be added later.
 
 == Roadmap
