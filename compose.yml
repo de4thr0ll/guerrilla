@@ -22,7 +22,10 @@ services:
       context: .
       dockerfile: tools.Dockerfile
     cap_drop:
-        - ALL
+    - ALL
+    # Uncomment the following two lines to allow ping from the tools container
+    # cap_add:
+    # - NET_RAW
     volumes:
     - ./shadowsocks.json:/etc/shadowsocks-rust/config.json:ro
     env_file:
