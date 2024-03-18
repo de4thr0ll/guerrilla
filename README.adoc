@@ -79,6 +79,14 @@ $ docker compose up -d shadowsocks
 == Tools
 Miscellaneous tools to simplify your user experience.
 
+[TIP]
+--
+To enable ping support for the `tools`, add the `NET_RAW` capability in the `compose.yml` file:
+
+[source,yaml]
+include::compose.yml[lines=24..29]
+--
+
 === genqr — Generate a QR code for shadowsocks clients
 This will generate a QR code for adding shadowsocks configuration to clients.
 The code will be printed right in your terminal in UTF-8.
