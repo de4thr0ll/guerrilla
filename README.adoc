@@ -104,4 +104,4 @@ TIP: The longer password the better. Make sure to use at least 20-byte passwords
 == Licenses
 * The code is licensed under the link:LICENSE[BSD Zero Clause License].
 
-* link:img/guerrilla-banner-512x215.png[guerrilla banner] © 2024 by de4thr0ll <github.com/de4thr0ll> is licensed under CC BY 4.0.
+* link:img/guerrilla-banner-512x215.png[guerrilla banner] © 2024 by de4thr0ll <160345688+de4thr0ll@users.noreply.github.com> is licensed under CC BY 4.0.
